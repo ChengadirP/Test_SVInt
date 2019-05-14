@@ -1,0 +1,25 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.2.2">
+  <id>8b19c4c5-a279-4ecf-8ac7-2eca25cc956f-1554707175595</id>
+  <proxyCount>1</proxyCount>
+  <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" version="1.10.4">
+   <append>true</append>
+   <file>recorded_traffic\loanprocessing_CP1.txt</file>
+   <host>null</host>
+   <port>80</port>
+   <listenPath>/loanprocessing_Proxy_CP1</listenPath>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <forwardPath>/parabank/services/LoanProcessor</forwardPath>
+    <host>localhost</host>
+    <port>8002</port>
+   </HttpProxyTargetConnection>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystoreType>PKCS12</keystoreType>
+    <truststoreType>PKCS12</truststoreType>
+    <port>80</port>
+   </HttpProxyTargetConnection>
+  </HttpProxyConnection>
+ </ProxyConfiguration>
+</proxyConfiguration>

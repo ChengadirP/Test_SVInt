@@ -1,0 +1,20 @@
+ResultSetMetaData: SELECT MAX(date) FROM News;data_17mfu0a.csv
+SELECT MAX(date) FROM News;data_apj7o4.csv
+SELECT id, date, headline, story FROM News WHERE date = '2019-04-30' ORDER BY id DESC;data_1m02cmv.csv
+ResultSetMetaData: SELECT value FROM Parameter WHERE name = 'accessmode';data_1p9lnps.csv
+SELECT value FROM Parameter WHERE name = 'accessmode';data_6b5b02.csv
+ResultSetMetaData: SELECT value FROM Parameter WHERE name = 'soap_endpoint';data_14clce6.csv
+SELECT value FROM Parameter WHERE name = 'soap_endpoint';data_106ipq0.csv
+ResultSetMetaData: SELECT value FROM Parameter WHERE name = 'rest_endpoint';data_1h4jbq3.csv
+SELECT value FROM Parameter WHERE name = 'rest_endpoint';data_1lalue9.csv
+SELECT id, first_name, last_name, address, city, state, zip_code, phone_number, ssn, username, password FROM Customer WHERE username = 'john' and password = 'demo';data_1rpvome.csv
+SELECT id, customer_id, type, balance FROM Account WHERE customer_id = '12212';data_1cjk0u.csv
+SELECT id, first_name, last_name, address, city, state, zip_code, phone_number, ssn, username, password FROM Customer WHERE id = '12212';data_1qv3lms.csv
+SELECT id, customer_id, type, balance FROM Account WHERE id = '12345';data_oi784q.csv
+SELECT id, account_id, type, date, amount, description FROM Transaction WHERE account_id = '12345' ORDER BY date, id;data_6v2obm.csv
+UPDATE Account SET customer_id = '12212', type = '0', balance = '-2356.00' WHERE id = '12345';data_1q7c92q.csv
+ResultSetMetaData: SELECT next_id FROM Sequence WHERE name = 'Transaction';data_16f8ls3.csv
+SELECT next_id FROM Sequence WHERE name = 'Transaction';data_vr7t9n.csv
+UPDATE Sequence SET next_id = '14587' WHERE name = 'Transaction';data_1n4roda.csv
+INSERT INTO Transaction (id, account_id, type, date, amount, description) VALUES ('14476', '12345', '1', '2019-05-09 16:04:11.002', '56', 'Bill Payment to test');data_1cq4qu3.csv
+UPDATE Customer SET first_name = 'John', last_name = 'Smith', address = '1431 Main St', city = 'Beverly Hills', state = 'CA', zip_code = '90210', phone_number = '310-447-4121', ssn = '622-11-9999', username = 'john', password = 'demo' WHERE id = '12212';data_1561rtj.csv
